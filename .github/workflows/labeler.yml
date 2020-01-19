@@ -8,6 +8,5 @@ jobs:
 
     steps:
     - uses: actions/labeler@v2
-      test: icons/*.svg
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
