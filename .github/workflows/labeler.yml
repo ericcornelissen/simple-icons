@@ -1,0 +1,13 @@
+name: Labeler
+on: [pull_request]
+
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/labeler@v2
+      test: icons/*.svg
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
