@@ -1,1 +1,9 @@
 test: icons/*.svg
+
+new:
+  - on: added
+  - icons/*.svg
+
+update:
+  - on: modified
+  - icons/*.svg
