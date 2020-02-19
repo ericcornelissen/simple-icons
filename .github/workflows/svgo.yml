@@ -1,8 +1,8 @@
 name: "Pull Request SVGOptimizer"
 on:
-- pull_request:
+  pull_request:
     paths:
-    - '**.svg'
+      - '**.svg'
 
 jobs:
   triage:
