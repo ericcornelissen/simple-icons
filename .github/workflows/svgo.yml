@@ -1,0 +1,13 @@
+name: "Pull Request SVGOptimizer"
+on:
+- pull_request:
+    paths:
+    - '**.svg'
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ericcornelissen/svgo-action@v0.1.0
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
