@@ -4,7 +4,7 @@ on:
     types: [submitted]
   schedule:
     # "At 00:00 on Sunday" (https://crontab.guru/once-a-week)
-    - cron: "* * * * *"
+    - cron: "0 0 * * 0"
 
 jobs:
   release:
