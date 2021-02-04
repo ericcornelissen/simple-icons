@@ -16,6 +16,11 @@
             "source": "https://1password.com/press/"
         },
         {
+            "title": "1Test",
+            "hex": "1194F5",
+            "source": "https://1test.com/press/"
+        },
+        {
             "title": "3M",
             "hex": "FF0000",
             "source": "https://www.3m.com/"
