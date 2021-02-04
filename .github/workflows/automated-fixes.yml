@@ -3,11 +3,12 @@ on:
   pull_request_target:
 
 jobs:
-  triage:
+  optimized-svgs:
+    name: optimize SVGs
     runs-on: ubuntu-latest
     steps:
       - uses: ericcornelissen/svgo-action@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          svg-options: .svgo.yml
-          ignore: images/*.svg
+          svgo-options: .svgo.yml
+          ignored: images/*.svg
