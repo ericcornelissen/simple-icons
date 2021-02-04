@@ -1,14 +1,13 @@
-name: Automated fixes for Pull Requests
+name: Automated fixes
 on:
   pull_request_target:
 
 jobs:
   optimized-svgs:
-    name: optimize SVGs
+    name: Optimize SVGs
     runs-on: ubuntu-latest
     steps:
-      - uses: ericcornelissen/svgo-action@v1
+      - uses: ericcornelissen/svgo-action@support-pull_request_target
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           svgo-options: .svgo.yml
-          ignored: images/*.svg
