@@ -7,7 +7,7 @@ jobs:
     name: Optimize SVGs
     runs-on: ubuntu-latest
     steps:
-      - uses: ericcornelissen/svgo-action@support-pull_request_target
+      - uses: ericcornelissen/svgo-action@tmp-pr-target
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           svgo-options: .svgo.yml
