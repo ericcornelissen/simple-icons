@@ -1,0 +1,15 @@
+name: Test schedule SVGO runs
+on:
+  schedule:
+    # Every minute
+    - cron: "* * * * *"
+
+jobs:
+  optimized-svgs:
+    name: Optimize SVGs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ericcornelissen/svgo-action@feat-271/branch-for-schedule
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: test-schedule-branch
