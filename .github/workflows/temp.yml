@@ -13,3 +13,4 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           branch: test-schedule-branch
+          ignore: icons/*.svg
