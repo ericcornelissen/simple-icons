@@ -9,7 +9,7 @@ jobs:
     name: Optimize SVGs
     runs-on: ubuntu-latest
     steps:
-      - uses: ericcornelissen/svgo-action@feat-271/branch-for-schedule
+      - uses: ericcornelissen/svgo-action@tmp
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           branch: test-schedule-branch
