@@ -11,7 +11,7 @@ jobs:
       did-create-pr: ${{ steps.release.outputs.did-create-pr }}
       new-version: ${{ steps.release.outputs.new-version }}
     steps:
-      - uses: simple-icons/release-action@master
+      - uses: simple-icons/release-action@dont-commit-version-bump
         id: release
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
@@ -25,4 +25,11 @@ jobs:
         with:
           # Ensure we are checked out on the develop branch
           ref: develop
-      - run: echo "${{ needs.release-pr.outputs.new-version }}"
+      - name: Version bump
+        run: node ./scripts/version-bump.js "${{ needs.release-pr.outputs.new-version }}"
+      - name: Update slugs table
+        run: node ./scripts/build-slugs-table.js
+      - name: Commit version bump
+        uses: stefanzweifel/git-auto-commit-action@v4.8.0
+        with:
+          commit_message: version bump
