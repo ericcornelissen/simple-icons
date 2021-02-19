@@ -692,6 +692,7 @@ update the script at 'scripts/build-slugs-table.js'.
 | `HelloFresh` | `hellofresh` |
 | `Helly Hansen` | `hellyhansen` |
 | `Helm` | `helm` |
+| `HelpDesk` | `helpdesk` |
 | `HERE` | `here` |
 | `Heroku` | `heroku` |
 | `Hexo` | `hexo` |
@@ -701,6 +702,7 @@ update the script at 'scripts/build-slugs-table.js'.
 | `HipChat` | `hipchat` |
 | `Hitachi` | `hitachi` |
 | `Hive` | `hive` |
+| `Hive` | `hive_blockchain` |
 | `HockeyApp` | `hockeyapp` |
 | `Home Assistant` | `homeassistant` |
 | `Home Assistant Community Store` | `homeassistantcommunitystore` |
@@ -1675,6 +1677,7 @@ update the script at 'scripts/build-slugs-table.js'.
 | `WebAssembly` | `webassembly` |
 | `WebAuthn` | `webauthn` |
 | `webcomponents.org` | `webcomponents-dot-org` |
+| `WebdriverIO` | `webdriverio` |
 | `Webflow` | `webflow` |
 | `WebGL` | `webgl` |
 | `Webmin` | `webmin` |
